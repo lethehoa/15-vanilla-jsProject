@@ -1,0 +1,158 @@
+/* * {
+   font-family: 'Montserrat', sans-serif;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   height: 100vh;
+}
+
+header {
+   display: flex;
+   justify-content: space-around;
+   padding: 15px;
+}
+
+header ul {
+   padding: 3px;
+   display: flex;
+   justify-content: space-around;
+}
+
+header h3 {
+   color: #28879f;
+   letter-spacing: 5px;
+}
+
+ul li { */
+   /* border: 1px solid red; */
+   /* list-style: none;
+   margin-right: 20px;
+}
+
+a {
+   text-decoration: none;
+   font-weight: bold;
+   color: #000000;
+   letter-spacing: 5px;
+}
+
+.container {
+   background-color: #7fffd4;
+   height: 50vh;
+   text-align: center;
+   font-size: 35px;
+   height: 92.1vh;
+}
+
+.container div{
+   position: relative;
+   top: 45%;
+}
+
+button {
+   font-size: 20px;
+   padding: 10px 30px;
+   background-color: aquamarine;
+   border: 1px solid #000000;
+   border-radius: 5px;
+} */
+* {
+   font-family: 'Montserrat', sans-serif;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; /*thuộc tính này cho phép thêm padding, border vào chiều rộng và chiều cao */
+}
+
+ul {
+   list-style-type: none;
+}
+
+a {
+   text-decoration: none;
+}
+
+h3 {
+   letter-spacing: 5px;
+}
+
+/*GLOBAL Setting*/
+
+header {
+   height: 3rem;
+   display: grid;
+   align-items: center;
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.nav-center {
+   /* border: #ccc 1px solid; */
+   width: 90vw; /*Đây là thuộc tính bắt buộc phải có, vì bình thường kích thẻ DIV nhỏ, nên thuộc tính justify-content không hoạt động*/
+   margin: 0 auto;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+
+.nav-links {
+   display: flex;
+}
+
+ul li a {
+   text-transform: capitalize;
+   font-weight: 700;
+   letter-spacing: 5px;
+   margin-right: 1rem;
+   color: #3da5c5;
+}
+
+ul li a:hover {
+   color: #a7ce3ddd;
+   transition: all 0.3s ease-in;
+}
+
+/*NAV*/
+
+main {
+   /* border: red 1px solid; */
+   height: calc(100vh - 3rem);      /*Hàm tính toán*/
+   display: grid;
+   align-items: center; 
+}
+
+.container {
+   text-align: center;
+   margin: 0 auto;         /*thuộc tính quan trọng */
+}
+
+.container h1 {
+   letter-spacing: 5px;
+   background: #000000;
+   color: #f2f2f2;
+   padding: 1rem;
+   margin-bottom: 2.5rem;
+   border-radius: 0.3em;
+}
+
+button {
+   text-transform: uppercase;
+   background: transparent;
+   color: #000000;
+   letter-spacing: 3px;
+   font-weight: 700;
+   border: 2px solid #000000;
+   cursor: pointer;
+   box-shadow: 0 1px 3px rbga(0, 0, 0, 0.2);
+   font-size: 1rem;
+   border-radius: 10px;
+   padding: 0.75rem 1.25rem;
+}
+
+button:hover {
+   transition: all 0.5s linear;
+   color: #f2f2f2;
+   background: #000000;
+}
+
+
