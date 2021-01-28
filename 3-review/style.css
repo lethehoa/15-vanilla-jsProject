@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: rgb(230, 239, 246);
+}
+
+a {
+  text-decoration: none;
+  color: #303d75;
+  font-size: 2rem;
+}
+
+img {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+/*GLOBAL */
+
+header {
+  display: grid;
+  align-items: center;
+  height: 20vh;
+  font-size: 20px;
+  /* border: 1px solid red; */
+
+  /* margin: 0 auto; */
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+header div {
+  margin: 0 auto;
+  text-align: center;
+  letter-spacing: 0.2rem;
+}
+header div div {
+  background-color: hsl(205, 78%, 60%);
+  margin-top: 20px;
+  height: 5px;
+  width: 100px;
+}
+
+/* HEADER */
+
+.container {
+  display: grid;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 70vw;
+  /* height: 70vh; */
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+/* MAIN */
+button {
+  display: block;
+  cursor: pointer;
+  margin: 5px auto;
+  padding: 10px 25px;
+  background: hsl(205, 78%, 60%);
+  border-radius: 4px;
+}
+
+#job {
+  text-transform: uppercase;
+  color: hsl(205, 78%, 60%);
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.random-btn {
+  background: #9cd2f8;
+  margin-bottom: 15px;
+  border: 1px solid #9cd2f8;
+  transition: all 0.3s linear;
+}
+
+.random-btn:hover {
+  background-color: #3c8ec8;
+}
+
+#prev-btn,
+#next-btn {
+  display: inline;
+  background: transparent;
+  border-color: transparent; /*Thuộc tính quan trọng, để làm mờ viền của button*/
+  padding: 10px;
+  font-size: 25px;
+  transition: all 0.3s linear;
+}
+
+/* #prev-btn,
+#next-btn {
+  color: #000000;
+  transition: all 0.3s linear;
+} */
+
+#prev-btn:hover,
+#next-btn:hover {
+  color: hsl(205, 78%, 60%);
+  
+}
+
+.container h3:nth-child(2) {
+  letter-spacing: 0.3rem;
+  padding: 20px;
+}
+
+#paragraph {
+  padding-top: 10px;
+}

@@ -1,0 +1,7 @@
+Lưu ý từ phần này trở đi, lập trình theo mobile first (ưu tiên giao diện trên điện thoại)
+
+Sử dụng "display: flex" + "align-items: center" để căn giữa.
+
+Tìm hiểu về việc sử dụng nhiều class trong cùng một elements và hàm toggle().
+
+Sử dụng font-awesome: fas-fa-bars

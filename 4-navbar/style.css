@@ -1,0 +1,140 @@
+/*
+- Rút kinh nghiệm trong bài này: Icon hamburger
+- align-items: center: Để căn giữa
+- Viết lại moble first
+*/
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Open Sans',sans-serif;
+}
+
+li {
+   list-style: none;
+   display: inline;
+   padding: 10px;
+}
+
+a {
+   text-decoration: none;
+   color: #000000;
+}
+
+button {
+   background-color: transparent;
+   border: transparent;
+   font-size: 20px;
+   transition: all 0.5s linear;
+}
+
+button:hover {
+   color: #a5d5f8;
+   transform: rotate(360deg);
+}
+
+h2 span {
+   color: #51a9e9;
+}
+
+.main-container li {
+   letter-spacing: 0.1rem;
+}
+
+/*GLOBAL*/
+
+.social-media {
+   display: none;
+}
+
+nav {
+   display: flex;
+   flex-direction: column;
+   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.show-links {
+   width: 0px;
+}
+
+.pre-container {
+   display: flex;
+   justify-content: space-between;
+   padding: 15px;
+}
+
+
+.pre-container h2 {
+   text-shadow: 2px 3px 5px  #8f8f8f;
+   font-weight: 200;
+}
+
+.main-container {
+   height: 0;
+   overflow: hidden;
+}
+
+.show-links {
+   height: 10rem;
+}
+
+.main-container li {
+   display: block;
+   transition: all 0.3s linear;
+}
+
+.main-container li:hover {
+   background-color: #a5d5f8;
+   padding-left: 25px;
+}
+
+
+/*Nav Bar*/
+
+
+@media screen and (min-width: 780px){
+   /* body {
+      display: none;
+   } */
+   .hamburger {
+      display: none;
+   }
+
+   nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+   }
+
+   .main-container {
+      display: inline;
+      height: inherit;
+   }
+
+   .main-container li {
+      display: inline-block;
+
+   }
+
+   .main-container li:hover {
+      background-color: transparent;
+   }
+
+   .main-container li a:hover {
+      color: #51a9e9;
+   }
+
+   .social-media {
+      display: inline;
+   }
+
+   .social-media li a {
+      color: #51a9e9;
+   }
+}
+

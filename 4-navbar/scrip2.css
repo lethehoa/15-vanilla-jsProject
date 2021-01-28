@@ -1,0 +1,144 @@
+/*SIDE BAR*/
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Open Sans',sans-serif;
+}
+
+li {
+   list-style: none;
+   display: inline;
+   padding: 10px;
+}
+
+span {
+   color: #49a6e9;
+}
+
+h2 {
+   text-shadow: 1px 3px 7px #585858;
+   letter-spacing: 0.3em;
+   font-weight: 400;
+   font-size: 25px;
+}
+
+a {
+   text-decoration: none;
+   color: #000000;
+}
+
+button {
+   background-color: transparent;
+   border: transparent;
+   font-size: 30px;
+   transition: all 0.3s linear;
+   cursor: pointer;
+}
+
+button:hover {
+   color: #a5d5f8;
+   /* transform: rotate(-0deg); */
+}
+
+.hamburger {
+   /* position: relative; */
+   background-color:#f1f5f8;
+   width: calc(100vw - 500px);
+   height: 100vh;
+   float: right;
+   color:  #51a9e9;
+   padding-right: 30px;
+   display: inline;
+   padding-top: 30px;
+   z-index: -1;
+   margin-left: 0;
+   transition: all 0.3s ease-in;
+}
+
+.hamburger button {
+   float: right;
+}
+
+/*GLOBAL*/
+
+nav {
+   position: absolute;     /*THUỘC TÍNH QUAN TRỌNG*/
+   float: left;
+   display: flex;
+   flex-direction: column;
+   /* justify-content: space-between; */
+   overflow: hidden;
+   /* width: 500px; */
+   height: 100vh;
+   width: 500px;
+   z-index: 1;
+   transition: all 0.3s ease-out;
+}
+
+.pre-container {
+   display: flex;
+   justify-content: space-between;
+   padding: 35px;
+}
+
+.pre-container button {
+   color: #af4646;
+}
+
+.pre-container button:hover {
+   transform: rotate(360deg);
+}
+
+.main-container {
+   /* height: 80vh; */
+   margin-left: 0;
+}
+
+.main-container ul li {
+   display: block;
+   height: 10vh;
+   padding-top: 15px;
+   padding-left: 35px;
+   /* padding-top: 2px; */
+   transition: all 0.3s ease-in;
+}
+
+.main-container ul li a{
+   color: #617d98;
+   font-size: 25px;
+   font-weight: 300;
+}
+
+.main-container ul li:hover {
+   background-color: #a5d5f8;
+   padding-left: 55px;
+}
+
+.social-media {
+   position: relative;
+   top: 280px;
+   /* left: 40%; */
+   margin: 0 auto;
+}
+
+.social-media a {
+   color: #49a6e9;
+   font-size: 25px;
+}
+
+@media screen and (max-width:750px){
+   .hamburger {
+      display: none;
+      transition: all 0.3s ease-in;
+   }
+   nav {
+      width: 100vw;
+      transition: all 0.3s ease-in;
+   }
+}
+
